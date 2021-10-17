@@ -32,7 +32,8 @@
 -   **mvn install:**  Deploys the packaged JAR/ WAR file to the local repository.
 
 ## Run implemented bug pattern on CloudStack 4.9
-1) Clone the Apache CloudStack source code using `git clone https://github.com/apache/cloudstack.git` into bug pattern project inside **fileToParse** folder.
-2) Install maven dependencies `mvn install`
-3) Run the bugpattern app using `mvn exec:java -Dexec.mainClass=javaparserBugDetector.Main`
-4) Now you can see all the three bug patterns are detected in the CloudStack repo and the report will be generated in the `javaparser-bug-detector\report\bugpattern.txt`.
+1) Clone the Apache CloudStack source code using `git clone https://github.com/apache/cloudstack.git` into bug pattern project inside **fileToParse** folder. (It will take      time because of the large file size)
+2) `cd javaparser-bug-detector` into the folder of the repo you just cloned
+3) Install maven dependencies `mvn install`
+4) Run the bugpattern app using `mvn exec:java -Dexec.mainClass=javaparserBugDetector.Main`
+5) Now you can see all the three bug patterns are detected in the CloudStack repo and the report will be generated in the `javaparser-bug-detector\report\bugpattern.txt`.
