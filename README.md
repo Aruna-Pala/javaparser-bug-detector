@@ -20,6 +20,7 @@
 2. `cd javaparser-bug-detector` into the folder of the repo you just cloned
 3. Install maven dependencies `mvn install`
 4. Run the bugpattern app using `mvn exec:java -Dexec.mainClass=javaparserBugDetector.Main`
+5. Now you can see reports generated in `bugpatterns.txt` under `javaparser-bug-detector\report
 
 ## Maven Commands
 
